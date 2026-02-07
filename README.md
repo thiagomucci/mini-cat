@@ -18,9 +18,9 @@ focusing on file descriptors, openat, read, write, and proper error handling
 Compile using a POSIX-compliant C compiler: cc -Wall -Wextra -pedantic mini-cat.c -o mini-cat
 
 ## Usage
-./mini-cat <directory> <file>
+./mini-cat directory file
 
 Example: ./mini-cat . README.md
 
-# References
+## References
 W. Richard Stevens, Advanced Programming in the UNIX Environment
