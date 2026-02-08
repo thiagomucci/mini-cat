@@ -39,11 +39,12 @@ main(int argc, char *argv[])
 		perror("write");
 		exit(1);
 	}
+	}
+
 	if(n < 0)
 	{
 		perror("read");
 		exit(1);
-	}
 	}
 
 	close(fd);
