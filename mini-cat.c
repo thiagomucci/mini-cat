@@ -47,8 +47,16 @@ main(int argc, char *argv[])
 		exit(1);
 	}
 
-	close(fd);
-	close(dirfd);
+	if(close(fd) < 0)
+	{
+		perror("close file");
+		exit(1);
+	}
+	if(close(dirfd) < 0)
+	{
+		perror("close dir");
+		exit(1);
+	}
 
 	return 0;
 }
